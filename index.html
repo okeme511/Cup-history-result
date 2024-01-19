@@ -20,15 +20,58 @@
   </head>
   <body>
     <h1 class="heading">
-      <img class="logo" src="assets/images/favicon (1).ico" alt="logo">
+      <img class="logo" src="assets/images/favicon (1).ico" alt="logo" />
       WORLD CUP WINNERS CHECK
     </h1>
 
-    <div class="Guess-area"></div>
+    <div class="Guess-area">
+      <p class="rules">
+        Rules: You must attempt all options starting from 2002 to 2022
+      </p>
+      <div class="year-area">
+        <button class="btn btn--medium btn--red">
+          <i class="fa-regular fa-flag"></i>
+          <p>2002</p>
+        </button>
+
+        <button class="btn btn--medium btn--orange">
+          <i class="fa-regular fa-flag"></i>
+          <p>2006</p>
+        </button>
+        <button class="btn btn--medium btn--green">
+          <i class="fa-regular fa-flag"></i>
+          <p>2010</p>
+        </button>
+        <button class="btn btn--medium btn--blue">
+          <i class="fa-regular fa-flag"></i>
+          <p>2014</p>
+        </button>
+        <button class="btn btn--medium btn--yellow">
+          <i class="fa-regular fa-flag"></i>
+          <p>2018</p>
+        </button>
+        <button class="btn btn--medium btn--purple">
+          <i class="fa-regular fa-flag"></i>
+          <p>2022</p>
+        </button>
+      </div>
+
+      <div class="question-area">
+        <span id="operand1">0</span>
+        <span id="operarator">vs</span>
+        <span id="operand2">0</span>
+        <span>=</span>
+        <p class="enter-message">Enter Answer:</p>
+        <input id="answer-box" type="text" />
+      </div>
+      <button class="btn btn--red">Submit Answer</button>
+    </div>
 
     <div class="attempt-area"></div>
-    <P class="result">Number of Pass Attempts <span id="score">0</span></P>
-    <P class="result">Number of Failed Attempts <span id="incorrectscore">0</span></P>
+    <p class="result">Number of Pass Attempts <span id="score">0</span></p>
+    <p class="result">
+      Number of Failed Attempts <span id="incorrectscore">0</span>
+    </p>
 
     <script src="assets/js/script.js"></script>
   </body>
